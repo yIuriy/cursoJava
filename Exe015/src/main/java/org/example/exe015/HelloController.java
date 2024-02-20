@@ -18,6 +18,5 @@ public class HelloController {
         float restoDivisao = numerador % denominador;
         resultadoDivisao.setText(String.valueOf(divisao));
         resultadorRestoDivisao.setText(String.valueOf(restoDivisao));
-
     }
 }
