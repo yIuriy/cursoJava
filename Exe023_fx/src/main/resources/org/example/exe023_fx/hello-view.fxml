@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="266.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.exe023_fx.HelloController">
+    <GridPane layoutX="40.0" layoutY="34.0" prefHeight="205.0" prefWidth="393.0" AnchorPane.leftAnchor="35.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="105.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="211.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="247.0" minWidth="10.0" prefWidth="71.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label text="Segmento A">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Slider fx:id="sliderSegmentoA" onMouseDragged="#atualizarLabelSegmentoA" GridPane.columnIndex="1" />
+        <Label fx:id="labelSegmentoA" text="0" GridPane.columnIndex="2">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label text="Segmento B" GridPane.rowIndex="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Slider fx:id="sliderSegmentoB" onMouseDragged="#atualizarLabelSegmentoB" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="Segmento C" GridPane.rowIndex="2">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Slider fx:id="sliderSegmentoC" onMouseDragged="#atualizarLabelSegmentoC" prefHeight="14.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label fx:id="labelSegmentoB" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelSegmentoC" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+      <Button fx:id="buttonVerificarTriangulo" mnemonicParsing="false" onAction="#verificarTriangulo" text="Verificar" GridPane.rowIndex="3" />
+      <Label fx:id="labelFormaTriangulo" textFill="#121bff" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTipoTriangulo" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    </GridPane>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>
