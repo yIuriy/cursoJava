@@ -11,5 +11,11 @@ public class Main {
             }
             System.out.println("Hello World! " + countHello);
         }
+
+        int count = 0;
+        do{
+            System.out.print(count + " -> ");
+            count++;
+        }while (count <= 10);
     }
 }
